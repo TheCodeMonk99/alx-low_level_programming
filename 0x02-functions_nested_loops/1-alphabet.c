@@ -5,11 +5,11 @@
   *Return: alphabet
   */
 
-int print_alphabet(void)
+void print_alphabet(void)
 {
 	int i;
 
 	for (i = 97, i <= 122, i++)
-		putchar(i);
-	putchar(10);
+		_putchar(i);
+	_putchar(10);
 }
