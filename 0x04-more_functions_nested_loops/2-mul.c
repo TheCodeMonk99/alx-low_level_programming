@@ -1,15 +1,12 @@
 #include "main.h"
-
 /**
-  * mul - multiplies 2 digits
-  * @a: first digit
-  * @b: second digit
-  * Return: product of the 2 digits
-  */
+ * mul - multiply 2 int
+ * @a: first int
+ * @b: second int
+ * Return: addition of the multiplicattion
+ */
 
 int mul(int a, int b)
 {
-	int a, b, res;
-
 	return (a * b);
 }
