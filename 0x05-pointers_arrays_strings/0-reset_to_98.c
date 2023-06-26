@@ -1,6 +1,6 @@
 /**
   * reset_to_98 - sets the value to 98
-  * @ *n: pointer variable
+  * @n: pointer variable
   *Return: Always 0
   */
 
