@@ -9,12 +9,10 @@
   * @argv: array of arguments
   * Return: 0 (Success), 1 (Error)
   */
-
 int main(int argc, char *argv[])
 {
-	int n, coins, money;
-	int n = 0;
-	int coin_array[] = {25, 10,  5, 2, 1};
+	int num, j, result;
+	int coins_array[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -22,24 +20,24 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	money = atoi(argv[1]); /*Converting argv[2] to money*/
-	coins = 0;
-	if (money < 0)/*money not +ve*/
+	num = atoi(argv[1]);
+	result = 0;
+
+	if (num < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
-	else if (money >= 0)
+
+	for (j = 0; j < 5 && num >= 0; j++)
 	{
-		for (n = 0; size < 5; n++)
+		while (num >= coins_array[j])
 		{
-			while (money >= coin_array[n])
-			{
-				++coins;
-				money -= coin_array[n];
-			}
+			result++;
+			num -= coins_array[j];
 		}
 	}
-	printf("%d\n", coins);
+
+	printf("%d\n", result);
 	return (0);
 }
