@@ -7,7 +7,7 @@
   * @b: character to be copied
   * @n: no. of times to be copied
   */
-void _memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i = 0;
 
