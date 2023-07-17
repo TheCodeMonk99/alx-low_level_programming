@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "dog.h"
+
 /**
   * print_dog - prints a variable of struct dog
   * @d: pointer to variable
