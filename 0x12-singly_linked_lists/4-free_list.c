@@ -5,7 +5,7 @@
   * @head: pointer to head
   * Return: Nothing
   */
-void free_list(const list_t *head)
+void free_list(list_t *head)
 {
 	list_t *temp;
 
@@ -14,6 +14,6 @@ void free_list(const list_t *head)
 		temp = head->next;
 		free(head->str);
 		free(head);
-		head = temp
+		head = temp;
 	}
 }
