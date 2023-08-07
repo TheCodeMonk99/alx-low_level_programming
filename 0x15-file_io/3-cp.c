@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
-
+char *create_buffer(void);
+void close_fd(int fd);
 /**
   * close_fd-  prints error when cannot close fd
   * @fd: fd unable to close
@@ -89,5 +90,3 @@ char *create_buffer()
 	}
 	return (store);
 }
-void close_fd(int fd);
-char *create_buffer(void);
