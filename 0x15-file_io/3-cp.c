@@ -90,16 +90,16 @@ int main(int argc, char *argv[])
   *
   * Return: returns buffer
   */
-char *create_buffer(void)
+char *create_buffer()
 {
 	char *store;
+
 
 	store = malloc(sizeof(char) * 1024);
 
 	if (store == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to\n");
-		exit(99);
+		return (NULL);
 	}
 	return (store);
 }
